@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>靳宏廷个人博客</title>
+    <script type="text/javascript" src="javascripts/jQuery-2.1.3.min.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+        /*JSON 数据用来存储网页的数据，方便今后修改*/
+        /*
+            var homeJson = {
+                "TitleName":"CarryDream",
+                "QQ":"958867874",
+                "Email":"w123_xiaomo2312_ht@foxmail.com"
+            };
+
+            $.each(homeJson, function(id, item){
+                alert(id+" ----- "+item);
+                if(id == "TitleName") {
+                    $("#aaaa").html(item);
+                }
+            });
+        */
+
+        $(function(){
+
+            $.get("data/home.json", function(json){
+                 $.each(json, function(id, item){
+                    alert(id+" ----- "+item);
+                    if(id == "TitleName") {
+                        $("#aaaa").html(item);
+                    }
+                });
+            });
+
+
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+
+
+<div id="aaaa"></div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

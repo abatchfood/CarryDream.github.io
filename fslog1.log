@@ -1,0 +1,284 @@
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_session.c:1061 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_session.c:1061 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_state_machine.c:472 (sofia/internal/8005@192.168.1.162) Running State Change CS_NEW
+2015-07-31 09:08:18.624260 [DEBUG] sofia.c:8848 sofia/internal/8005@192.168.1.162 receiving invite from 192.168.1.160:53129 version: 1.4.19  64bit
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_media.c:344 Found audio zrtp-hash; setting r_sdp_audio_zrtp_hash=1.10 c18e32a96cef456ef3ed75a9e218e389b7b145b421c0b22761e676b971d71fad
+2015-07-31 09:08:18.624260 [DEBUG] sofia.c:9015 IP 192.168.1.160 Rejected by acl "domains". Falling back to Digest auth.
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_session.c:1061 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.624260 [DEBUG] sofia.c:2065 detaching session 881d7a8c-3785-11e5-ba9f-2910c40c731f
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_state_machine.c:491 (sofia/internal/8005@192.168.1.162) State NEW
+2015-07-31 09:08:18.624260 [DEBUG] sofia.c:2173 Re-attaching to session 881d7a8c-3785-11e5-ba9f-2910c40c731f
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_session.c:1061 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.624260 [DEBUG] switch_core_session.c:1061 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.644413 [DEBUG] sofia.c:8848 sofia/internal/8005@192.168.1.162 receiving invite from 192.168.1.160:53129 version: 1.4.19  64bit
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_media.c:344 Found audio zrtp-hash; setting r_sdp_audio_zrtp_hash=1.10 c18e32a96cef456ef3ed75a9e218e389b7b145b421c0b22761e676b971d71fad
+2015-07-31 09:08:18.644413 [DEBUG] sofia.c:9015 IP 192.168.1.160 Rejected by acl "domains". Falling back to Digest auth.
+2015-07-31 09:08:18.644413 [DEBUG] sofia.c:6627 Channel sofia/internal/8005@192.168.1.162 entering state [received][100]
+2015-07-31 09:08:18.644413 [DEBUG] sofia.c:6637 Remote SDP:
+v=0
+o=- 3647365861 3647365861 IN IP4 192.168.1.160
+s=Blink 1.4.1 (Windows)
+t=0 0
+m=audio 50064 RTP/AVP 113 9 109 104 103 3 0 8 101
+c=IN IP4 192.168.1.160
+a=rtpmap:113 opus/48000/2
+a=fmtp:113 useinbandfec=1
+a=rtpmap:9 G722/8000
+a=rtpmap:109 iLBC/8000
+a=fmtp:109 mode=30
+a=rtpmap:104 speex/32000
+a=rtpmap:103 speex/16000
+a=rtpmap:3 GSM/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=rtcp:50065
+a=zrtp-hash:1.10 c18e32a96cef456ef3ed75a9e218e389b7b145b421c0b22761e676b971d71fad
+
+2015-07-31 09:08:18.644413 [DEBUG] sofia.c:6903 (sofia/internal/8005@192.168.1.162) State Change CS_NEW -> CS_INIT
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_session.c:1396 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:472 (sofia/internal/8005@192.168.1.162) Running State Change CS_INIT
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:512 (sofia/internal/8005@192.168.1.162) State INIT
+2015-07-31 09:08:18.644413 [DEBUG] mod_sofia.c:87 sofia/internal/8005@192.168.1.162 SOFIA INIT
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:40 sofia/internal/8005@192.168.1.162 Standard INIT
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:48 (sofia/internal/8005@192.168.1.162) State Change CS_INIT -> CS_ROUTING
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_session.c:1396 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:512 (sofia/internal/8005@192.168.1.162) State INIT going to sleep
+2015-07-31 09:08:18.644413 [DEBUG] mod_lua.cpp:459 lua event hook: execute 'event-CHANNEL_CREATE.lua'
+2015-07-31 09:08:18.644413 [INFO] switch_cpp.cpp:1328 CHANNEL_CREATE uuid-881d7a8c-3785-11e5-ba9f-2910c40c731f call_uuid-881d7a8c-3785-11e5-ba9f-2910c40c731f 
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:472 (sofia/internal/8005@192.168.1.162) Running State Change CS_ROUTING
+2015-07-31 09:08:18.644413 [DEBUG] switch_channel.c:2204 (sofia/internal/8005@192.168.1.162) Callstate Change DOWN -> RINGING
+2015-07-31 09:08:18.644413 [DEBUG] mod_lua.cpp:459 lua event hook: execute 'event-CHANNEL_CALLSTATE.lua'
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:528 (sofia/internal/8005@192.168.1.162) State ROUTING
+2015-07-31 09:08:18.644413 [DEBUG] mod_sofia.c:123 sofia/internal/8005@192.168.1.162 SOFIA ROUTING
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:166 sofia/internal/8005@192.168.1.162 Standard ROUTING
+2015-07-31 09:08:18.644413 [INFO] mod_dialplan_xml.c:635 Processing Bob <8005>->015824735464 in context default_outgoing
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->outgoing_global] continue=true
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [outgoing_global] ${call_debug}(false) =~ /^true$/ break=never
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [outgoing_global] ${satisfaction}() =~ /^true$/ break=never
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (PASS) [outgoing_global] ${switch_r_sdp}(v=0
+o=- 3647365861 3647365861 IN IP4 192.168.1.160
+s=Blink 1.4.1 (Windows)
+t=0 0
+m=audio 50064 RTP/AVP 113 9 109 104 103 3 0 8 101
+c=IN IP4 192.168.1.160
+a=rtpmap:113 opus/48000/2
+a=fmtp:113 useinbandfec=1
+a=rtpmap:9 G722/8000
+a=rtpmap:109 iLBC/8000
+a=fmtp:109 mode=30
+a=rtpmap:104 speex/32000
+a=rtpmap:103 speex/16000
+a=rtpmap:3 GSM/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=rtcp:50065
+a=zrtp-hash:1.10 c18e32a96cef456ef3ed75a9e218e389b7b145b421c0b22761e676b971d71fad
+) =~ /a=rtpmap:(\d+)\stelephone-event/8000/ break=never
+Dialplan: sofia/internal/8005@192.168.1.162 Action set(rtp_payload_number=101) 
+Dialplan: sofia/internal/8005@192.168.1.162 Absolute Condition [outgoing_global]
+Dialplan: sofia/internal/8005@192.168.1.162 Action lua(enable_check_exten.lua ${caller_id_number}) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action lua(init_exten_info.lua ${caller_id_number}) 
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->dx] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [dx] destination_number(015824735464) =~ /^dx$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->is_transfer] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [is_transfer] destination_number(015824735464) =~ /^is_transfer$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->att_xfer] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [att_xfer] destination_number(015824735464) =~ /^att_xfer$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->cf] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [cf] destination_number(015824735464) =~ /^(cf|51)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->hold] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [hold] destination_number(015824735464) =~ /^hold$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->att_xfer_to] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [att_xfer_to] destination_number(015824735464) =~ /^atrans(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->conferences] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [conferences] destination_number(015824735464) =~ /^conf(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->Ask for number] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [Ask for number] destination_number(015824735464) =~ /^ASK_FOR_NUMBER$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->Add call to conference] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [Add call to conference] destination_number(015824735464) =~ /^ADD_CALL_TO_CONF__(\d{2}|[^1]\d{2}|[^25]\d{3}|[^91]\d{4}|\d{6})$/ break=on-true
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [Add call to conference] destination_number(015824735464) =~ /^ADD_CALL_TO_CONF__(\d{7,20})$/ break=on-true
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [Add call to conference] destination_number(015824735464) =~ /^ADD_CALL_TO_CONF__$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->Remove last call from conference] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [Remove last call from conference] destination_number(015824735464) =~ /^CANCEL_LAST_CALL$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->callcenter] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [callcenter] destination_number(015824735464) =~ /^(callcenter|55)(\w+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->agent_login] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [agent_login] destination_number(015824735464) =~ /^(agent-login|56)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->agent_logoff] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [agent_logoff] destination_number(015824735464) =~ /^(agent-logoff|57)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->satisfaction] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [satisfaction] destination_number(015824735464) =~ /^(satisfaction)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->call_return] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [call_return] destination_number(015824735464) =~ /^(lcr|52)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->last_dial_num] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [last_dial_num] destination_number(015824735464) =~ /^(lcrnum|61)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->redial] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [redial] destination_number(015824735464) =~ /^(redial|53)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->last_dial_num] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [last_dial_num] destination_number(015824735464) =~ /^(ldnum|62)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->eavesdrop] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [eavesdrop] destination_number(015824735464) =~ /^(spy|71)(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->group-intercept] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [group-intercept] destination_number(015824735464) =~ /^(gpickup|72)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->intercept-ext] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [intercept-ext] destination_number(015824735464) =~ /^(pickup|73)(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->vmain] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [vmain] destination_number(015824735464) =~ /^(vmain|81)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->video_record] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [video_record] destination_number(015824735464) =~ /^(record|82)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->video_playback] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [video_playback] destination_number(015824735464) =~ /^(rplay|83)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->echo] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [echo] destination_number(015824735464) =~ /^(echo|91)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->delay_echo] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [delay_echo] destination_number(015824735464) =~ /^(decho|92)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->show_info] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [show_info] destination_number(015824735464) =~ /^(info|93)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->say_cid_num] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [say_cid_num] destination_number(015824735464) =~ /^(cidnum|63)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->add-group] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [add-group] destination_number(015824735464) =~ /^agroup(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->del-group] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [del-group] destination_number(015824735464) =~ /^dgroup(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->call-group-simo] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [call-group-simo] destination_number(015824735464) =~ /^sgroup(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->call-group-order] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [call-group-order] destination_number(015824735464) =~ /^cgroup(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->Hash insert] continue=true
+Dialplan: sofia/internal/8005@192.168.1.162 Absolute Condition [Hash insert]
+Dialplan: sofia/internal/8005@192.168.1.162 Action hash(insert/last_dial/${caller_id_number}/${destination_number}) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action export(RFC2822_DATE=${strftime(%a, %d %b %Y %T %z)}) 
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->Local_Extension] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (FAIL) [Local_Extension] destination_number(015824735464) =~ /^(\d{2}|[^1]\d{2}|[^25]\d{3}|[^91]\d{4}|\d{6})$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 parsing [default_outgoing->External_Extension] continue=false
+Dialplan: sofia/internal/8005@192.168.1.162 Regex (PASS) [External_Extension] destination_number(015824735464) =~ /^(\d+)$/ break=on-false
+Dialplan: sofia/internal/8005@192.168.1.162 Action export(dialed_extension=015824735464) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action set(bind_meta_key=*) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action bind_meta_app(1 a s execute_extension::dx) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action bind_meta_app(2 a s execute_extension::att_xfer) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action bind_meta_app(3 a s execute_extension::cf) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action bind_meta_app(4 a s execute_extension::hold) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action set(ringback=${us-ring}) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action set(transfer_ringback=local_stream://moh) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action set(continue_on_fail=true) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action set(hangup_after_bridge=true) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action set(recording_follow_transfer=true) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action system(mkdir -p /usr/local/freeswitch/recordings/${strftime(%Y-%m-%d)}/) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action export(record_filename=${strftime(%Y-%m-%d)}/${strftime(%Y-%m-%d-%H-%M-%S)}_${caller_id_number}_${destination_number}.mp3) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action export(execute_on_answer=record_session /usr/local/freeswitch/recordings/${strftime(%Y-%m-%d)}/${strftime(%Y-%m-%d-%H-%M-%S)}_${caller_id_number}_${destination_number}.mp3) 
+Dialplan: sofia/internal/8005@192.168.1.162 Action lua(bridge_phone.lua ${init_exten_gateway} ${init_gateway_timeout} ${dialed_extension}) 
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:216 (sofia/internal/8005@192.168.1.162) State Change CS_ROUTING -> CS_EXECUTE
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_session.c:1396 Send signal sofia/internal/8005@192.168.1.162 [BREAK]
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:528 (sofia/internal/8005@192.168.1.162) State ROUTING going to sleep
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:472 (sofia/internal/8005@192.168.1.162) Running State Change CS_EXECUTE
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:535 (sofia/internal/8005@192.168.1.162) State EXECUTE
+2015-07-31 09:08:18.644413 [DEBUG] mod_sofia.c:178 sofia/internal/8005@192.168.1.162 SOFIA EXECUTE
+2015-07-31 09:08:18.644413 [DEBUG] switch_core_state_machine.c:258 sofia/internal/8005@192.168.1.162 Standard EXECUTE
+EXECUTE sofia/internal/8005@192.168.1.162 set(rtp_payload_number=101)
+2015-07-31 09:08:18.644413 [DEBUG] mod_dptools.c:1469 sofia/internal/8005@192.168.1.162 SET [rtp_payload_number]=[101]
+EXECUTE sofia/internal/8005@192.168.1.162 lua(enable_check_exten.lua 8005)
+2015-07-31 09:08:18.644413 [INFO] switch_cpp.cpp:1328 (hash select/exten_enabled/8005)->true
+2015-07-31 09:08:18.644413 [DEBUG] switch_cpp.cpp:1075 sofia/internal/8005@192.168.1.162 destroy/unlink session from object
+EXECUTE sofia/internal/8005@192.168.1.162 lua(init_exten_info.lua 8005)
+2015-07-31 09:08:18.644413 [INFO] switch_cpp.cpp:1328 (hash select/exten_timeout/8005)->30
+2015-07-31 09:08:18.644413 [INFO] switch_cpp.cpp:1328 (hash select/exten_gateway/8005)->88860170234
+2015-07-31 09:08:18.644413 [INFO] switch_cpp.cpp:1328 (hash select/gateway_timeout/88860170234)->120
+2015-07-31 09:08:18.644413 [DEBUG] switch_cpp.cpp:1075 sofia/internal/8005@192.168.1.162 destroy/unlink session from object
+EXECUTE sofia/internal/8005@192.168.1.162 hash(insert/last_dial/8005/015824735464)
+EXECUTE sofia/internal/8005@192.168.1.162 export(RFC2822_DATE=Fri, 31 Jul 2015 09:08:18 +0800)
+2015-07-31 09:08:18.644413 [DEBUG] switch_channel.c:1267 EXPORT (export_vars) [RFC2822_DATE]=[Fri, 31 Jul 2015 09:08:18 +0800]
+EXECUTE sofia/internal/8005@192.168.1.162 export(dialed_extension=015824735464)
+2015-07-31 09:08:18.644413 [DEBUG] switch_channel.c:1267 EXPORT (export_vars) [dialed_extension]=[015824735464]
+EXECUTE sofia/internal/8005@192.168.1.162 set(bind_meta_key=*)
+2015-07-31 09:08:18.644413 [DEBUG] mod_dptools.c:1469 sofia/internal/8005@192.168.1.162 SET [bind_meta_key]=[*]
+EXECUTE sofia/internal/8005@192.168.1.162 bind_meta_app(1 a s execute_extension::dx)
+2015-07-31 09:08:18.644413 [INFO] switch_ivr_async.c:3858 Bound A-Leg: *1 execute_extension::dx
+EXECUTE sofia/internal/8005@192.168.1.162 bind_meta_app(2 a s execute_extension::att_xfer)
+2015-07-31 09:08:18.644413 [INFO] switch_ivr_async.c:3858 Bound A-Leg: *2 execute_extension::att_xfer
+EXECUTE sofia/internal/8005@192.168.1.162 bind_meta_app(3 a s execute_extension::cf)
+2015-07-31 09:08:18.644413 [INFO] switch_ivr_async.c:3858 Bound A-Leg: *3 execute_extension::cf
+EXECUTE sofia/internal/8005@192.168.1.162 bind_meta_app(4 a s execute_extension::hold)
+2015-07-31 09:08:18.644413 [INFO] switch_ivr_async.c:3858 Bound A-Leg: *4 execute_extension::hold
+EXECUTE sofia/internal/8005@192.168.1.162 set(ringback=%(1000,4000,450))
+2015-07-31 09:08:18.644413 [DEBUG] mod_dptools.c:1469 sofia/internal/8005@192.168.1.162 SET [ringback]=[%(1000,4000,450)]
+EXECUTE sofia/internal/8005@192.168.1.162 set(transfer_ringback=local_stream://moh)
+2015-07-31 09:08:18.644413 [DEBUG] mod_dptools.c:1469 sofia/internal/8005@192.168.1.162 SET [transfer_ringback]=[local_stream://moh]
+EXECUTE sofia/internal/8005@192.168.1.162 set(continue_on_fail=true)
+2015-07-31 09:08:18.644413 [DEBUG] mod_dptools.c:1469 sofia/internal/8005@192.168.1.162 SET [continue_on_fail]=[true]
+EXECUTE sofia/internal/8005@192.168.1.162 set(hangup_after_bridge=true)
+2015-07-31 09:08:18.644413 [DEBUG] mod_dptools.c:1469 sofia/internal/8005@192.168.1.162 SET [hangup_after_bridge]=[true]
+EXECUTE sofia/internal/8005@192.168.1.162 set(recording_follow_transfer=true)
+2015-07-31 09:08:18.644413 [DEBUG] mod_dptools.c:1469 sofia/internal/8005@192.168.1.162 SET [recording_follow_transfer]=[true]
+EXECUTE sofia/internal/8005@192.168.1.162 system(mkdir -p /usr/local/freeswitch/recordings/2015-07-31/)
+2015-07-31 09:08:18.644413 [NOTICE] mod_dptools.c:2040 Executing command: mkdir -p /usr/local/freeswitch/recordings/2015-07-31/
+EXECUTE sofia/internal/8005@192.168.1.162 export(record_filename=2015-07-31/2015-07-31-09-08-18_8005_015824735464.mp3)
+2015-07-31 09:08:18.884480 [DEBUG] switch_channel.c:1267 EXPORT (export_vars) [record_filename]=[2015-07-31/2015-07-31-09-08-18_8005_015824735464.mp3]
+EXECUTE sofia/internal/8005@192.168.1.162 export(execute_on_answer=record_session /usr/local/freeswitch/recordings/2015-07-31/2015-07-31-09-08-18_8005_015824735464.mp3)
+2015-07-31 09:08:18.904279 [DEBUG] switch_channel.c:1267 EXPORT (export_vars) [execute_on_answer]=[record_session /usr/local/freeswitch/recordings/2015-07-31/2015-07-31-09-08-18_8005_015824735464.mp3]
+EXECUTE sofia/internal/8005@192.168.1.162 lua(bridge_phone.lua 88860170234 120 015824735464)
+EXECUTE sofia/internal/8005@192.168.1.162 bridge({ignore_early_media=false,bridge_early_media=true}[leg_timeout=120]sofia/gateway/88860170234/015824735464)
+2015-07-31 09:08:18.904279 [DEBUG] switch_channel.c:1221 sofia/internal/8005@192.168.1.162 EXPORTING[export_vars] [RFC2822_DATE]=[Fri, 31 Jul 2015 09:08:18 +0800] to event
+2015-07-31 09:08:18.904279 [DEBUG] switch_channel.c:1221 sofia/internal/8005@192.168.1.162 EXPORTING[export_vars] [dialed_extension]=[015824735464] to event
+2015-07-31 09:08:18.904279 [DEBUG] switch_channel.c:1221 sofia/internal/8005@192.168.1.162 EXPORTING[export_vars] [record_filename]=[2015-07-31/2015-07-31-09-08-18_8005_015824735464.mp3] to event
+2015-07-31 09:08:18.904279 [DEBUG] switch_channel.c:1221 sofia/internal/8005@192.168.1.162 EXPORTING[export_vars] [execute_on_answer]=[record_session /usr/local/freeswitch/recordings/2015-07-31/2015-07-31-09-08-18_8005_015824735464.mp3] to event
+2015-07-31 09:08:18.904279 [DEBUG] switch_ivr_originate.c:2101 Parsing global variables
+2015-07-31 09:08:18.904279 [DEBUG] switch_event.c:1698 Parsing variable [ignore_early_media]=[false]
+2015-07-31 09:08:18.904279 [DEBUG] switch_event.c:1698 Parsing variable [bridge_early_media]=[true]
+2015-07-31 09:08:18.904279 [DEBUG] switch_ivr_originate.c:2554 Parsing session specific variables
+2015-07-31 09:08:18.904279 [DEBUG] switch_event.c:1698 Parsing variable [leg_timeout]=[120]
+2015-07-31 09:08:18.904279 [NOTICE] switch_channel.c:1075 New Channel sofia/external/015824735464 [88479b28-3785-11e5-baba-2910c40c731f]
+2015-07-31 09:08:18.904279 [DEBUG] mod_sofia.c:4685 sofia/external/015824735464 setting variable [no_effect]=[no_effect]
+2015-07-31 09:08:18.904279 [DEBUG] mod_sofia.c:4701 (sofia/external/015824735464) State Change CS_NEW -> CS_INIT
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_session.c:1396 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_media.c:266 Passing a-leg remote zrtp-hash (audio) to b-leg
+2015-07-31 09:08:18.904279 [DEBUG] mod_sofia.c:4771 [zrtp_passthru] Setting a-leg inherit_codec=true
+2015-07-31 09:08:18.904279 [DEBUG] mod_sofia.c:4774 [zrtp_passthru] Setting b-leg absolute_codec_string='PCMU@8000h@20i@64000b,PCMA@8000h@20i@64000b'
+2015-07-31 09:08:18.904279 [DEBUG] switch_ivr_originate.c:2848 sofia/external/015824735464 Setting leg timeout to 120
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:472 (sofia/external/015824735464) Running State Change CS_INIT
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:512 (sofia/external/015824735464) State INIT
+2015-07-31 09:08:18.904279 [DEBUG] mod_sofia.c:87 sofia/external/015824735464 SOFIA INIT
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_media.c:6178 Adding audio a=zrtp-hash:1.10 c18e32a96cef456ef3ed75a9e218e389b7b145b421c0b22761e676b971d71fad
+2015-07-31 09:08:18.904279 [DEBUG] sofia_glue.c:1236 sofia/external/015824735464 sending invite version: 1.4.19  64bit
+Local SDP:
+v=0
+o=FreeSWITCH 1438285332 1438285333 IN IP4 192.168.1.162
+s=FreeSWITCH
+c=IN IP4 192.168.1.162
+t=0 0
+m=audio 19566 RTP/AVP 0 8 101 13
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=zrtp-hash:1.10 c18e32a96cef456ef3ed75a9e218e389b7b145b421c0b22761e676b971d71fad
+a=sendrecv
+
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_session.c:1061 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:40 sofia/external/015824735464 Standard INIT
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:48 (sofia/external/015824735464) State Change CS_INIT -> CS_ROUTING
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_session.c:1396 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:512 (sofia/external/015824735464) State INIT going to sleep
+2015-07-31 09:08:18.904279 [DEBUG] mod_lua.cpp:459 lua event hook: execute 'event-CHANNEL_CREATE.lua'
+2015-07-31 09:08:18.904279 [INFO] switch_cpp.cpp:1328 CHANNEL_CREATE uuid-88479b28-3785-11e5-baba-2910c40c731f call_uuid-881d7a8c-3785-11e5-ba9f-2910c40c731f 
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:472 (sofia/external/015824735464) Running State Change CS_ROUTING
+2015-07-31 09:08:18.904279 [DEBUG] sofia.c:6627 Channel sofia/external/015824735464 entering state [calling][0]
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:528 (sofia/external/015824735464) State ROUTING
+2015-07-31 09:08:18.904279 [DEBUG] mod_sofia.c:123 sofia/external/015824735464 SOFIA ROUTING
+2015-07-31 09:08:18.904279 [DEBUG] switch_ivr_originate.c:67 (sofia/external/015824735464) State Change CS_ROUTING -> CS_CONSUME_MEDIA
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_session.c:1396 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:528 (sofia/external/015824735464) State ROUTING going to sleep
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:472 (sofia/external/015824735464) Running State Change CS_CONSUME_MEDIA
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:547 (sofia/external/015824735464) State CONSUME_MEDIA
+2015-07-31 09:08:18.904279 [DEBUG] switch_core_state_machine.c:547 (sofia/external/015824735464) State CONSUME_MEDIA going to sleep
+2015-07-31 09:08:28.324985 [DEBUG] mod_lua.cpp:459 lua event hook: execute 'event-HEARTBEAT.lua'
+2015-07-31 09:08:28.324985 [NOTICE] mod_cdr_csv.c:123 Rotated CDR logfile /usr/local/freeswitch/log/cdr-csv/Master.csv
+2015-07-31 09:08:29.004990 [DEBUG] switch_core_session.c:1061 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:29.004990 [DEBUG] switch_core_session.c:1061 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:29.004990 [DEBUG] switch_core_session.c:1061 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:29.004990 [DEBUG] switch_core_session.c:1061 Send signal sofia/external/015824735464 [BREAK]
+2015-07-31 09:08:29.004990 [DEBUG] switch_core_media.c:272 Passing b-leg remote zrtp-hash (audio) to a
